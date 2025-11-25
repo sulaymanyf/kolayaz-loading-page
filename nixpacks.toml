@@ -6,7 +6,7 @@ buildImage = "ghcr.io/railwayapp/nixpacks:latest"
 # 构建阶段
 [phases.setup]
 # 指定 Node.js 20 与 pnpm
-nixPkgs = ["nodejs-20_x", "pnpm"]
+nixPkgs = ["nodejs-20", "pnpm"]
 
 [phases.build]
 # 安装依赖并构建 Next.js

@@ -25,6 +25,21 @@ interface Translations {
     stat2Label: string
     stat3Value: string
     stat3Label: string
+    nearbyPrinter: string
+    realTimeShow: string
+    mapLoading: string
+    prince: string
+    curren: string
+    page: string
+    format: string
+    formats: string
+    estimate: string
+    time: string
+    printNow:string
+    starbucks: string
+    sevenEleven: string
+    libraryPrintCenter: string
+    campusPrintShop: string,
   }
   stats: {
     printers: string
@@ -85,6 +100,13 @@ interface Translations {
   pricing: {
     title: string
     subtitle: string
+    merchantValue: {
+      badge: string
+      title: string
+      description: string
+      profitShare: string
+      platformFee: string
+    }
     subscription: {
       title: string
       price: string
@@ -106,6 +128,7 @@ interface Translations {
       paymentFee: string
       subscription: string
       netIncome: string
+      merchantProfit: string
     }
     fees: {
       title: string
@@ -147,6 +170,21 @@ const translations: Record<Language, Translations> = {
       stat2Label: "Avg. Earnings",
       stat3Value: "24/7",
       stat3Label: "Service",
+      nearbyPrinter: "Nearby printing spots",
+      realTimeShow: "Real-time display of online devices, intelligently choosing the optimal route",
+      mapLoading: "Loading map…",
+      prince: "Unit price",
+      curren: "₺",
+      page: "page",
+      format: "Format",
+      formats: "PDF, Word, Image",
+      estimate: "Estimated",
+      time: "3-5 minutes",
+      starbucks: "Starbucks Café",
+      sevenEleven: "7-Eleven Convenience Store",
+      libraryPrintCenter: "Library Printing Center",
+      campusPrintShop: "Campus Print Shop",
+      printNow: "Print Now"
     },
     stats: {
       printers: "Online Printers",
@@ -207,6 +245,14 @@ const translations: Record<Language, Translations> = {
     pricing: {
       title: "Simple & Transparent Pricing",
       subtitle: "Clear pricing model with no hidden fees",
+      merchantValue: {
+        badge: "Merchant First",
+        title: "We Give You 89% - 95% of Profits",
+        description:
+            "Our mission is to serve merchants. We only keep minimal fees to maintain the platform, ensuring you earn the maximum from your printer.",
+        profitShare: "Goes to You",
+        platformFee: "Platform Fees",
+      },
       subscription: {
         title: "Monthly Subscription",
         price: "₺20",
@@ -228,6 +274,7 @@ const translations: Record<Language, Translations> = {
         paymentFee: "Payment Fee",
         subscription: "Subscription",
         netIncome: "Your Earnings",
+        merchantProfit: "You Keep",
       },
       fees: {
         title: "Fee Details",
@@ -267,6 +314,21 @@ const translations: Record<Language, Translations> = {
       stat2Label: "平均收益",
       stat3Value: "24/7",
       stat3Label: "全天候服务",
+      nearbyPrinter: "附近打印点",
+      realTimeShow : "实时显示在线设备，智能选择最优路线",
+      mapLoading : "加载地图中...",
+      prince : "单价",
+      curren :  "₺",
+      page: "页",
+      format: "格式",
+      formats: "PDF, Word, 图片",
+      estimate: "预计",
+      time: "3-5 分钟",
+      starbucks: "星巴克咖啡馆",
+      sevenEleven: "7-11 便利店",
+      libraryPrintCenter: "图书馆打印中心",
+      campusPrintShop: "校园快印店",
+      printNow: "立即打印"
     },
     stats: {
       printers: "在线打印机",
@@ -326,12 +388,19 @@ const translations: Record<Language, Translations> = {
     },
     pricing: {
       title: "简单透明的定价",
-      subtitle: "清晰的定价模式，无隐藏费用",
+      subtitle: "清晰的定价模式,无隐藏费用",
+      merchantValue: {
+        badge: "商家优先",
+        title: "我们将 89% - 95% 的利润交给您",
+        description: "我们的使命是服务商家。我们只保留最低限度的费用来维持平台运营,确保您从打印机中获得最大收益。",
+        profitShare: "归您所有",
+        platformFee: "平台费用",
+      },
       subscription: {
         title: "月订阅费",
         price: "₺20",
         period: "/ 每月",
-        description: "固定月费，无限订单",
+        description: "固定月费,无限订单",
       },
       commission: {
         title: "阶梯式抽成",
@@ -348,6 +417,7 @@ const translations: Record<Language, Translations> = {
         paymentFee: "支付手续费",
         subscription: "订阅费",
         netIncome: "你的收入",
+        merchantProfit: "你保留",
       },
       fees: {
         title: "费用说明",
@@ -388,6 +458,21 @@ const translations: Record<Language, Translations> = {
       stat2Label: "Ort. Kazanç",
       stat3Value: "7/24",
       stat3Label: "Hizmet",
+      nearbyPrinter: "Yakındaki yazıcı noktaları",
+      realTimeShow: "Çevrimiçi cihazların gerçek zamanlı gösterimi, optimal rotayı akıllıca seçme",
+      mapLoading: "Harita yükleniyor…",
+      prince: "Birim fiyat",
+      curren: "₺",
+      page: "sayfa",
+      format: "Format",
+      formats: "PDF, Word, Resim",
+      estimate: "Tahmini",
+      time: "3-5 dakika",
+      starbucks: "Starbucks Kafe",
+      sevenEleven: "7-Eleven Marketi",
+      libraryPrintCenter: "Kütüphane Yazıcı Merkezi",
+      campusPrintShop: "Kampüs Baskı Dükkanı",
+      printNow: "Şimdi Yazdır"
     },
     stats: {
       printers: "Çevrimiçi Yazıcılar",
@@ -448,6 +533,14 @@ const translations: Record<Language, Translations> = {
     pricing: {
       title: "Basit ve Şeffaf Fiyatlandırma",
       subtitle: "Net fiyatlandırma modeli, gizli ücret yok",
+      merchantValue: {
+        badge: "Satıcı Önceliği",
+        title: "Kârın %89 - %95'ini Size Veriyoruz",
+        description:
+            "Misyonumuz satıcılara hizmet etmektir. Platformu sürdürmek için sadece minimum ücret alıyoruz, yazıcınızdan maksimum kazanç elde etmenizi sağlıyoruz.",
+        profitShare: "Size Gidiyor",
+        platformFee: "Platform Ücretleri",
+      },
       subscription: {
         title: "Aylık Abonelik",
         price: "₺20",
@@ -469,6 +562,7 @@ const translations: Record<Language, Translations> = {
         paymentFee: "Ödeme Ücreti",
         subscription: "Abonelik",
         netIncome: "Kazancınız",
+        merchantProfit: "Siz Tutarsınız",
       },
       fees: {
         title: "Ücret Detayları",

@@ -6,45 +6,8 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Printer, Clock, DollarSign } from "lucide-react"
 import 'leaflet/dist/leaflet.css';
+import { useTranslation } from "@/lib/i18n"
 //41.009216, 28.982623
-const mockLocations = [
-  {
-    id: 1,
-    name: "星巴克咖啡馆",
-    status: "online",
-    price: "0.2",
-    distance: "300m",
-    lat: 41.036130,
-    lng: 28.969245,
-  },
-  {
-    id: 2,
-    name: "7-11 便利店",
-    status: "printing",
-    price: "0.15",
-    distance: "500m",
-    lat: 41.014796,
-    lng: 28.957607,
-  },
-  {
-    id: 3,
-    name: "图书馆打印中心",
-    status: "online",
-    price: "0.18",
-    distance: "800m",
-    lat: 41.022756,
-    lng: 29.011771,
-  },
-  {
-    id: 4,
-    name: "校园快印店",
-    status: "online",
-    price: "0.12",
-    distance: "1.2km",
-    lat: 41.009216,
-    lng: 28.982623,
-  },
-]
 
 declare global {
   interface Window {
@@ -57,6 +20,48 @@ export function NetworkMap() {
   const [selectedLocation, setSelectedLocation] = useState<(typeof mockLocations)[0] | null>(null)
   const mapInstanceRef = useRef<any>(null)
   const [mapLoaded, setMapLoaded] = useState(false)
+  const { t } = useTranslation()
+
+  const mockLocations = [
+
+    {
+      id: 1,
+      name: t.hero.starbucks,
+      status: "online",
+      price: "0.2",
+      distance: "300m",
+      lat: 41.036130,
+      lng: 28.969245,
+    },
+    {
+      id: 2,
+      name: t.hero.sevenEleven,
+      status: "printing",
+      price: "0.15",
+      distance: "500m",
+      lat: 41.014796,
+      lng: 28.957607,
+    },
+    {
+      id: 3,
+      name: t.hero.libraryPrintCenter,
+      status: "online",
+      price: "0.18",
+      distance: "800m",
+      lat: 41.022756,
+      lng: 29.011771,
+    },
+    {
+      id: 4,
+      name: t.hero.campusPrintShop,
+      status: "online",
+      price: "0.12",
+      distance: "1.2km",
+      lat: 41.009216,
+      lng: 28.982623,
+    },
+  ]
+
 
   useEffect(() => {
     const link = document.createElement("link")
@@ -231,7 +236,7 @@ export function NetworkMap() {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-4xl md:text-5xl font-bold">
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">附近打印点</span>
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t.hero.title}附近打印点</span>
           </h2>
           <p className="text-xl text-muted-foreground">实时显示在线设备，智能选择最优路线</p>
         </div>
@@ -244,7 +249,7 @@ export function NetworkMap() {
               <div className="absolute inset-0 flex items-center justify-center bg-slate-950 z-10">
                 <div className="text-center space-y-4">
                   <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto" />
-                  <p className="text-muted-foreground">加载地图中...</p>
+                  <p className="text-muted-foreground">{t.hero.mapLoading}</p>
                 </div>
               </div>
             )}
@@ -277,23 +282,23 @@ export function NetworkMap() {
                     <div className="space-y-2">
                       <div className="flex items-center gap-2 text-sm">
                         <DollarSign className="w-4 h-4 text-primary" />
-                        <span className="text-muted-foreground">单价：</span>
-                        <span className="font-semibold">¥{selectedLocation.price}/页</span>
+                        <span className="text-muted-foreground">{t.hero.prince}：</span>
+                        <span className="font-semibold">{t.hero.curren}{selectedLocation.price}{t.hero.page}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Printer className="w-4 h-4 text-primary" />
-                        <span className="text-muted-foreground">格式：</span>
-                        <span>PDF, Word, 图片</span>
+                        <span className="text-muted-foreground">{t.hero.format}：</span>
+                        <span>{t.hero.formats}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Clock className="w-4 h-4 text-primary" />
-                        <span className="text-muted-foreground">预计：</span>
-                        <span>3-5 分钟</span>
+                        <span className="text-muted-foreground">{t.hero.estimate}：</span>
+                        <span>{t.hero.time}</span>
                       </div>
                     </div>
 
                     <Button className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity">
-                      立即打印
+                      {t.hero.printNow}
                     </Button>
                   </CardContent>
                 </Card>

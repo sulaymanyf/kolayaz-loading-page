@@ -1,3 +1,23 @@
-[setup]
-package_manager = "pnpm"
-node_version = "20"
+# nixpacks.toml
+
+# 使用最新 Nixpacks 官方镜像，确保 Node.js 20 可用
+buildImage = "ghcr.io/railwayapp/nixpacks:latest"
+
+# 构建阶段
+[phases.setup]
+# 指定 Node.js 20 与 pnpm
+nixPkgs = ["nodejs-20_x", "pnpm"]
+
+[phases.build]
+# 安装依赖并构建 Next.js
+cmds = [
+  "pnpm install",
+  "pnpm run build"
+]
+
+[start]
+# 启动应用
+cmd = "pnpm start"
+
+[variables]
+NODE_ENV = "production"

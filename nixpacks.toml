@@ -1,4 +1,2 @@
-[phases.setup]
-[languages.nodejs]
-version = "20"         # 指定 Node.js 20
-package_manager = "npm" # 指定 npm（也可以用 yarn 或 pnpm）
+[phases.setup.versions]
+nodejs = "20"

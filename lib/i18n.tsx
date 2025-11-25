@@ -40,6 +40,8 @@ interface Translations {
     sevenEleven: string
     libraryPrintCenter: string
     campusPrintShop: string,
+    online: string,
+    printing: string,
   }
   stats: {
     printers: string
@@ -184,7 +186,9 @@ const translations: Record<Language, Translations> = {
       sevenEleven: "7-Eleven Convenience Store",
       libraryPrintCenter: "Library Printing Center",
       campusPrintShop: "Campus Print Shop",
-      printNow: "Print Now"
+      printNow: "Print Now",
+      online: "Online",
+      printing: "Printing"
     },
     stats: {
       printers: "Online Printers",
@@ -328,7 +332,9 @@ const translations: Record<Language, Translations> = {
       sevenEleven: "7-11 便利店",
       libraryPrintCenter: "图书馆打印中心",
       campusPrintShop: "校园快印店",
-      printNow: "立即打印"
+      printNow: "立即打印",
+      online: "在线",
+      printing: "打印中"
     },
     stats: {
       printers: "在线打印机",
@@ -472,7 +478,9 @@ const translations: Record<Language, Translations> = {
       sevenEleven: "7-Eleven Marketi",
       libraryPrintCenter: "Kütüphane Yazıcı Merkezi",
       campusPrintShop: "Kampüs Baskı Dükkanı",
-      printNow: "Şimdi Yazdır"
+      printNow: "Şimdi Yazdır",
+      online: "online",
+      printing: "Yazdırılıyor"
     },
     stats: {
       printers: "Çevrimiçi Yazıcılar",

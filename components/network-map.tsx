@@ -236,9 +236,9 @@ export function NetworkMap() {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-4xl md:text-5xl font-bold">
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t.hero.title}附近打印点</span>
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t.hero.title}</span>
           </h2>
-          <p className="text-xl text-muted-foreground">实时显示在线设备，智能选择最优路线</p>
+          <p className="text-xl text-muted-foreground">{t.hero.realTimeShow}</p>
         </div>
 
         <div className="max-w-6xl mx-auto">

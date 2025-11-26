@@ -15,7 +15,7 @@ export function Header() {
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
               <Printer className="h-5 w-5 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold">PrintHub</span>
+            <span className="text-xl font-bold">KolaYaz</span>
           </div>
 
           <nav className="hidden items-center gap-8 md:flex">
@@ -31,10 +31,9 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
-              {t.header.login}
-            </Button>
-            <Button size="sm">{t.header.getStarted}</Button>
+            <Button size="sm" onClick={() =>{
+                window.open('https://merchant.kolayaz.com/', '_blank');
+            }}>{t.header.getStarted}</Button>
           </div>
         </div>
       </div>

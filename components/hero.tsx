@@ -30,11 +30,17 @@ export function Hero() {
             <p className="text-lg text-muted-foreground text-pretty leading-relaxed">{t.hero.description}</p>
 
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Button size="lg" className="gap-2 text-base">
+              <Button size="lg" className="gap-2 text-base" onClick={() => {
+                console.log('Navigating to kolayaz.com')
+                window.open('https://kolayaz.com', '_blank');
+              }}>
                 <MapPin className="h-5 w-5" />
                 {t.hero.findPrinter}
               </Button>
-              <Button size="lg" variant="outline" className="text-base bg-transparent">
+              <Button size="lg" variant="outline" className="text-base bg-transparent" onClick={() => {
+                window.open('https://merchant.kolayaz.com/register', '_blank');
+                window.location.href = ''
+              }}>
                 {t.hero.registerPrinter}
               </Button>
             </div>

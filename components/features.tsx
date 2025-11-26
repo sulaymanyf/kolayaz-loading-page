@@ -45,7 +45,7 @@ export function Features() {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-balance">
-            {t.features.title} <span className="text-primary">PrintHub</span>
+            {t.features.title} <span className="text-primary">KolaYaz</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">{t.features.subtitle}</p>
         </div>

@@ -225,7 +225,7 @@ const translations: Record<Language, Translations> = {
       },
     },
     howItWorks: {
-      title: "How PrintHub Works",
+      title: "How KolaYaz Works",
       subtitle: "Start your smart printing journey in three steps",
       userBadge: "Print Users",
       ownerBadge: "Device Providers",
@@ -289,7 +289,7 @@ const translations: Record<Language, Translations> = {
     cta: {
       title: "Ready to Get Started?",
       description:
-        "Join PrintHub and experience the convenience of smart shared printing. Whether you need printing services or want to monetize idle equipment, we have the perfect solution for you.",
+        "Join KolaYaz and experience the convenience of smart shared printing. Whether you need printing services or want to monetize idle equipment, we have the perfect solution for you.",
       primaryButton: "Get Started Now",
       secondaryButton: "Contact Us to Learn More",
       feature1: "No App Download",
@@ -371,7 +371,7 @@ const translations: Record<Language, Translations> = {
       },
     },
     howItWorks: {
-      title: "如何使用 PrintHub",
+      title: "如何使用 KolaYaz",
       subtitle: "三步开始您的智能打印之旅",
       userBadge: "打印用户",
       ownerBadge: "设备提供者",
@@ -434,7 +434,7 @@ const translations: Record<Language, Translations> = {
     cta: {
       title: "准备好开始了吗？",
       description:
-        "加入 PrintHub，体验智能共享打印的便利。 无论您是需要打印服务的用户，还是想将闲置设备变现的设备主， 我们都为您准备了完善的解决方案。",
+        "加入 KolaYaz，体验智能共享打印的便利。 无论您是需要打印服务的用户，还是想将闲置设备变现的设备主， 我们都为您准备了完善的解决方案。",
       primaryButton: "立即开始使用",
       secondaryButton: "联系我们了解更多",
       feature1: "无需下载APP",
@@ -517,7 +517,7 @@ const translations: Record<Language, Translations> = {
       },
     },
     howItWorks: {
-      title: "PrintHub Nasıl Çalışır",
+      title: "KolaYaz Nasıl Çalışır",
       subtitle: "Akıllı yazdırma yolculuğunuza üç adımda başlayın",
       userBadge: "Yazdırma Kullanıcıları",
       ownerBadge: "Cihaz Sağlayıcıları",
@@ -581,7 +581,7 @@ const translations: Record<Language, Translations> = {
     cta: {
       title: "Başlamaya Hazır mısınız?",
       description:
-        "PrintHub'a katılın ve akıllı paylaşımlı yazdırmanın rahatlığını yaşayın. İster yazdırma hizmetlerine ihtiyacınız olsun, ister boş ekipmanınızı paraya çevirmek isteyin, sizin için mükemmel çözümümüz var.",
+        "KolaYaz'a katılın ve akıllı paylaşımlı yazdırmanın rahatlığını yaşayın. İster yazdırma hizmetlerine ihtiyacınız olsun, ister boş ekipmanınızı paraya çevirmek isteyin, sizin için mükemmel çözümümüz var.",
       primaryButton: "Hemen Başlayın",
       secondaryButton: "Daha Fazla Bilgi İçin Bize Ulaşın",
       feature1: "Uygulama İndirmeye Gerek Yok",

@@ -1,16 +1,13 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { I18nProvider } from "@/lib/i18n"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 // 更新元数据为共享打印平台
 export const metadata: Metadata = {
-  title: "PrintHub - 智能共享打印平台",
+  title: "KolaYaz - 智能共享打印平台",
   description: "随时随地找到附近打印点，让闲置打印机变现。智能IOT连接，安全快捷。",
   generator: "v0.app",
   icons: {

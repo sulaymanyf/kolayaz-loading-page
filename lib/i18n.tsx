@@ -163,7 +163,7 @@ const translations: Record<Language, Translations> = {
       title: "Print Anytime",
       titleHighlight: "Anywhere",
       description:
-        "Find nearby print locations with smart positioning, no equipment needed. Or connect your idle printer to earn passive income.",
+          "Find nearby print locations with smart positioning, no equipment needed. Or connect your idle printer to earn passive income.",
       findPrinter: "Find Nearby Printers",
       registerPrinter: "Register & Earn Money",
       stat1Value: "5,000+",
@@ -289,7 +289,7 @@ const translations: Record<Language, Translations> = {
     cta: {
       title: "Ready to Get Started?",
       description:
-        "Join KolaYaz and experience the convenience of smart shared printing. Whether you need printing services or want to monetize idle equipment, we have the perfect solution for you.",
+          "Join KolaYaz and experience the convenience of smart shared printing. Whether you need printing services or want to monetize idle equipment, we have the perfect solution for you.",
       primaryButton: "Get Started Now",
       secondaryButton: "Contact Us to Learn More",
       feature1: "No App Download",
@@ -434,7 +434,7 @@ const translations: Record<Language, Translations> = {
     cta: {
       title: "准备好开始了吗？",
       description:
-        "加入 KolaYaz，体验智能共享打印的便利。 无论您是需要打印服务的用户，还是想将闲置设备变现的设备主， 我们都为您准备了完善的解决方案。",
+          "加入 KolaYaz，体验智能共享打印的便利。 无论您是需要打印服务的用户，还是想将闲置设备变现的设备主， 我们都为您准备了完善的解决方案。",
       primaryButton: "立即开始使用",
       secondaryButton: "联系我们了解更多",
       feature1: "无需下载APP",
@@ -448,14 +448,14 @@ const translations: Record<Language, Translations> = {
       howToUse: "Nasıl Çalışır",
       pricing: "Fiyatlandırma",
       login: "Giriş Yap",
-      getStarted: "Başlayın",
+      getStarted: "Başla",
     },
     hero: {
       badge: "Akıllı IOT Bağlantısı · Gerçek Zamanlı",
       title: "Her Zaman",
       titleHighlight: "Her Yerde Yazdır",
       description:
-        "Akıllı konumlama ile yakındaki yazdırma noktalarını bulun, ekipman almanıza gerek yok. Veya boş yazıcınızı ağa bağlayarak pasif gelir elde edin.",
+          "Akıllı konum ile size en yakın yazdırma noktalarını bulun, boşuna yazıcı almak zorunda kalmayın. Veya, kullanmadığınız yazıcınızı ağa bağlayarak pasif gelir elde edin!",
       findPrinter: "Yakındaki Yazıcıları Bul",
       registerPrinter: "Yazıcı Kaydet & Para Kazan",
       stat1Value: "5.000+",
@@ -474,8 +474,8 @@ const translations: Record<Language, Translations> = {
       formats: "PDF, Word, Resim",
       estimate: "Tahmini",
       time: "3-5 dakika",
-      starbucks: "Starbucks Kafe",
-      sevenEleven: "7-Eleven Marketi",
+      starbucks: "Starbucks",
+      sevenEleven: "7-Eleven Market",
       libraryPrintCenter: "Kütüphane Yazıcı Merkezi",
       campusPrintShop: "Kampüs Baskı Dükkanı",
       printNow: "Şimdi Yazdır",
@@ -489,15 +489,15 @@ const translations: Record<Language, Translations> = {
       satisfaction: "Memnuniyet Oranı",
     },
     features: {
-      title: "Neden Seçmelisiniz",
+      title: "Neden Üye Olmalısın?",
       subtitle: "Akıllı teknoloji destekli paylaşımlı yazdırma platformu, yazdırmayı basit ve verimli hale getirir",
       location: {
         title: "Akıllı Konum",
-        description: "Yakındaki yazıcıları gerçek zamanlı görüntüleyin, doğru navigasyon, 5 dakika yürüme mesafesinde",
+        description: "Yakındaki yazıcıları gerçek zamanlı görüntüleyin! Doğru navigasyon, 5 dakika yürüme mesafesinde",
       },
       security: {
         title: "Güvenli & Güvenilir",
-        description: "Kurumsal düzeyde şifreli aktarım, otomatik dosya imhası, gizliliğinizi korur",
+        description: "Kurumsal düzeyde şifreli aktarımı ve otomatik dosya imhası ile gizliliğiniz güvence altında.",
       },
       instant: {
         title: "Anında Yazdır",
@@ -513,17 +513,17 @@ const translations: Record<Language, Translations> = {
       },
       iot: {
         title: "IOT Bağlantılı",
-        description: "Akıllı cihaz yönetimi, uzaktan yazıcı izleme, sarf malzemesi hatırlatmaları",
+        description: "Akıllı cihaz yönetimi, uzaktan yazıcı izleme, kartuş ve kağıt hatırlatmaları",
       },
     },
     howItWorks: {
       title: "KolaYaz Nasıl Çalışır",
-      subtitle: "Akıllı yazdırma yolculuğunuza üç adımda başlayın",
+      subtitle: "Akıllı yazdırma yolculuğunuza üç adımda kolayca başlayın",
       userBadge: "Yazdırma Kullanıcıları",
       ownerBadge: "Cihaz Sağlayıcıları",
       userSteps: {
         step1Title: "Yazıcı Bul",
-        step1Desc: "Uygulamayı açın ve yakındaki mevcut yazdırma konumlarını görüntüleyin",
+        step1Desc: "Uygulamayı açın ve yakındaki mevcut çıktı alabileceğiniz konumları görüntüleyin",
         step2Title: "Belge Yükle",
         step2Desc: "Dosyaları seçin, yazdırma parametrelerini ayarlayın, tek tıkla gönderin",
         step3Title: "Teslim Al",
@@ -545,22 +545,22 @@ const translations: Record<Language, Translations> = {
         badge: "Satıcı Önceliği",
         title: "Kârın %89 - %95'ini Size Veriyoruz",
         description:
-            "Misyonumuz satıcılara hizmet etmektir. Platformu sürdürmek için sadece minimum ücret alıyoruz, yazıcınızdan maksimum kazanç elde etmenizi sağlıyoruz.",
-        profitShare: "Size Gidiyor",
+            "Yalnızca platform gideri için minimum komisyon alıyoruz, yazıcınızdan maksimum kazanç elde etmenizi sağlıyoruz.",
+        profitShare: "Yazıcı Sahibi Payı",
         platformFee: "Platform Ücretleri",
       },
       subscription: {
         title: "Aylık Abonelik",
-        price: "₺20",
+        price: "₺0",
         period: "/ her ay",
-        description: "Sabit aylık ücret, sınırsız sipariş",
+        description: "Sabit aylık ücret yok, sınırsız sipariş!",
       },
       commission: {
         title: "Kademeli Komisyon",
-        tier1: "₺0 - 500: %1 komisyon",
-        tier2: "₺500 - 1.000: %2 komisyon",
-        tier3: "₺1.000 - 5.000: %3 komisyon",
-        tier4: "> ₺5.000: %4 komisyon",
+        tier1: "₺0 - 500: %10 komisyon",
+        tier2: "₺500 - 1.000: %20 komisyon",
+        tier3: "₺1.000 - 5.000: %30 komisyon",
+        tier4: "> ₺5.000: %40 komisyon",
       },
       examples: {
         title: "Gelir Örnekleri",
@@ -581,7 +581,7 @@ const translations: Record<Language, Translations> = {
     cta: {
       title: "Başlamaya Hazır mısınız?",
       description:
-        "KolaYaz'a katılın ve akıllı paylaşımlı yazdırmanın rahatlığını yaşayın. İster yazdırma hizmetlerine ihtiyacınız olsun, ister boş ekipmanınızı paraya çevirmek isteyin, sizin için mükemmel çözümümüz var.",
+          "KolaYaz'a katılın ve paylaşımlı yazdırmanın rahatlığını yaşayın. İster yazdırma hizmetlerine ihtiyacınız olsun, ister evde boş duran yazıcınızı gelire dönüştürmek isteyin, sizin için mükemmel bir çözümümüz var.",
       primaryButton: "Hemen Başlayın",
       secondaryButton: "Daha Fazla Bilgi İçin Bize Ulaşın",
       feature1: "Uygulama İndirmeye Gerek Yok",

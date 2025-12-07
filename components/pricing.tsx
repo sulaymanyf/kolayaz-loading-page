@@ -172,7 +172,7 @@ export function Pricing() {
                   <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="font-semibold mb-1">{t.pricing.examples.paymentFee}</div>
-                    <div className="bg-gray-200 text-muted-foreground  text-xl p-2 rounded">{t.pricing.fees.payment}</div>
+                    <div className="bg-blue-500 text-white text-lg font-semibold shadow-sm p-2 rounded">{t.pricing.fees.payment}</div>
                   </div>
                 </div>
                 <div className="flex gap-3">

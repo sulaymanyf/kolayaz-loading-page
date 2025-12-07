@@ -483,8 +483,8 @@ const translations: Record<Language, Translations> = {
       printing: "Yazdırılıyor"
     },
     stats: {
-      printers: "Çevrimiçi Yazıcılar",
-      users: "Aktif Kullanıcılar",
+      printers: "Çevrimiçi Yazıcı",
+      users: "Aktif Kullanıcı",
       revenue: "Cihaz Sahibi Geliri",
       satisfaction: "Memnuniyet Oranı",
     },
@@ -493,7 +493,7 @@ const translations: Record<Language, Translations> = {
       subtitle: "Akıllı teknoloji destekli paylaşımlı yazdırma platformu, yazdırmayı basit ve verimli hale getirir",
       location: {
         title: "Akıllı Konum",
-        description: "Yakındaki yazıcıları gerçek zamanlı görüntüleyin! Doğru navigasyon, 5 dakika yürüme mesafesinde",
+        description: "Yakındaki yazıcıları gerçek zamanlı görüntüleyin! Size en yakın yazıcıları hızlıca bulun.",
       },
       security: {
         title: "Güvenli & Güvenilir",
@@ -501,7 +501,7 @@ const translations: Record<Language, Translations> = {
       },
       instant: {
         title: "Anında Yazdır",
-        description: "Yükleyin ve hemen yazdırın, beklemeye gerek yok, birden fazla dosya formatını destekler",
+        description: "Dosyanızı yükleyin ve hemen yazdırın, beklemeye gerek yok, birden fazla dosya formatını destekler",
       },
       wallet: {
         title: "Şeffaf Kazançlar",
@@ -527,7 +527,7 @@ const translations: Record<Language, Translations> = {
         step2Title: "Belge Yükle",
         step2Desc: "Dosyaları seçin, yazdırma parametrelerini ayarlayın, tek tıkla gönderin",
         step3Title: "Teslim Al",
-        step3Desc: "Yazdırma noktasına gidin, kodu tarayın ve alın, kolay tamamlama",
+        step3Desc: "Yazdırma noktasına gidin, kodu tarayın ve çıktınızı kolayca teslim alın.",
       },
       ownerSteps: {
         step1Title: "Cihaz Kaydı",
@@ -574,8 +574,8 @@ const translations: Record<Language, Translations> = {
       },
       fees: {
         title: "Ücret Detayları",
-        payment: "İşlemin %2'si + sipariş başına ₺0,5",
-        commission: "Komisyon oranı gelir arttıkça azalır",
+        payment: "İlk 3 ay sıfır komisyon!",
+        commission: "Satıcı memnuniyeti odaklı komisyon oranları",
       },
     },
     cta: {

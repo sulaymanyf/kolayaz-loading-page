@@ -4,18 +4,18 @@ import { Check } from "lucide-react"
 import { useTranslation } from "@/lib/i18n"
 
 function calculateEarnings(monthlyRevenue: number, orderCount: number) {
-  let commissionRate = 0.01 // 1%
+  let commissionRate = 0.1 // 1%
   if (monthlyRevenue > 5000) {
-    commissionRate = 0.04 // 4%
+    commissionRate = 0.4 // 4%
   } else if (monthlyRevenue > 1000) {
-    commissionRate = 0.03 // 3%
+    commissionRate = 0.3 // 3%
   } else if (monthlyRevenue > 500) {
-    commissionRate = 0.02 // 2%
+    commissionRate = 0.2 // 2%
   }
 
   const avgOrderAmount = monthlyRevenue / orderCount
   const totalPaymentFees = orderCount * (avgOrderAmount * 0.02 + 0.5)
-  const totalPlatformFee = monthlyRevenue * commissionRate + 20
+  const totalPlatformFee = monthlyRevenue * commissionRate
   const merchantEarnings = monthlyRevenue - totalPaymentFees - totalPlatformFee
 
   return {
@@ -43,10 +43,10 @@ export function Pricing() {
   }))
 
   const commissionRates = [
-    { range: t.pricing.commission.tier1.split(":")[0], rate: "1%" },
-    { range: t.pricing.commission.tier2.split(":")[0], rate: "2%" },
-    { range: t.pricing.commission.tier3.split(":")[0], rate: "3%" },
-    { range: t.pricing.commission.tier4.split(":")[0], rate: "4%" },
+    { range: t.pricing.commission.tier1.split(":")[0], rate: "10%" },
+    { range: t.pricing.commission.tier2.split(":")[0], rate: "20%" },
+    { range: t.pricing.commission.tier3.split(":")[0], rate: "30%" },
+    { range: t.pricing.commission.tier4.split(":")[0], rate: "40%" },
   ]
 
   return (
@@ -60,31 +60,31 @@ export function Pricing() {
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-balance">{t.pricing.subtitle}</p>
           </div>
 
-          <div className="max-w-4xl mx-auto mb-12">
-            <div className="relative bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 border-2 border-primary/40 rounded-2xl p-8 overflow-hidden">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]" />
-              <div className="relative z-10 text-center">
-                <div className="inline-block bg-primary/20 text-primary px-4 py-1 rounded-full text-sm font-semibold mb-4">
-                  {t.pricing.merchantValue.badge}
-                </div>
-                <h3 className="text-3xl md:text-4xl font-bold mb-3 text-balance">{t.pricing.merchantValue.title}</h3>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
-                  {t.pricing.merchantValue.description}
-                </p>
-                <div className="flex flex-wrap items-center justify-center gap-6 md:gap-12 mt-8">
-                  <div className="text-center">
-                    <div className="text-5xl md:text-6xl font-bold text-primary mb-2">89% - 95%</div>
-                    <div className="text-sm text-muted-foreground">{t.pricing.merchantValue.profitShare}</div>
-                  </div>
-                  <div className="hidden md:block w-px h-16 bg-border" />
-                  <div className="text-center">
-                    <div className="text-3xl md:text-4xl font-bold mb-2">5% - 11%</div>
-                    <div className="text-sm text-muted-foreground">{t.pricing.merchantValue.platformFee}</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/*<div className="max-w-4xl mx-auto mb-12">*/}
+          {/*  <div className="relative bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 border-2 border-primary/40 rounded-2xl p-8 overflow-hidden">*/}
+          {/*    <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]" />*/}
+          {/*    <div className="relative z-10 text-center">*/}
+          {/*      <div className="inline-block bg-primary/20 text-primary px-4 py-1 rounded-full text-sm font-semibold mb-4">*/}
+          {/*        {t.pricing.merchantValue.badge}*/}
+          {/*      </div>*/}
+          {/*      <h3 className="text-3xl md:text-4xl font-bold mb-3 text-balance">{t.pricing.merchantValue.title}</h3>*/}
+          {/*      <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance">*/}
+          {/*        {t.pricing.merchantValue.description}*/}
+          {/*      </p>*/}
+          {/*      <div className="flex flex-wrap items-center justify-center gap-6 md:gap-12 mt-8">*/}
+          {/*        <div className="text-center">*/}
+          {/*          <div className="text-5xl md:text-6xl font-bold text-primary mb-2">89% - 95%</div>*/}
+          {/*          <div className="text-sm text-muted-foreground">{t.pricing.merchantValue.profitShare}</div>*/}
+          {/*        </div>*/}
+          {/*        <div className="hidden md:block w-px h-16 bg-border" />*/}
+          {/*        <div className="text-center">*/}
+          {/*          <div className="text-3xl md:text-4xl font-bold mb-2">5% - 11%</div>*/}
+          {/*          <div className="text-sm text-muted-foreground">{t.pricing.merchantValue.platformFee}</div>*/}
+          {/*        </div>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
 
           <div className="max-w-4xl mx-auto mb-12">
             <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl p-8">
@@ -172,18 +172,19 @@ export function Pricing() {
                   <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="font-semibold mb-1">{t.pricing.examples.paymentFee}</div>
-                    <div className="text-sm text-muted-foreground">{t.pricing.fees.payment}</div>
+                    <div className="bg-gray-200 text-muted-foreground  text-xl p-2 rounded">{t.pricing.fees.payment}</div>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="font-semibold mb-1">{t.pricing.examples.commission}</div>
-                    <div className="text-sm text-muted-foreground">{t.pricing.fees.commission}</div>
+                    <div className="text-muted-foreground">{t.pricing.fees.commission}</div>
+
                   </div>
                 </div>
                 <div className="flex gap-3">
-                  <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="font-semibold mb-1">{t.pricing.subscription.title}</div>
                     <div className="text-sm text-muted-foreground">

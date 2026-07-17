@@ -19,7 +19,7 @@ export function Header() {
             <span className="text-xl font-bold">KolaYaz</span>
           </Link>
 
-          <nav className="hidden items-center gap-8 md:flex">
+          <nav className="hidden items-center gap-5 md:flex lg:gap-8">
             <Link href="/#features" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
               {t.header.features}
             </Link>
@@ -31,6 +31,12 @@ export function Header() {
             </Link>
             <Link href="/support" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
               {t.header.support}
+            </Link>
+            <Link href="/policy" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+              {t.header.policy}
+            </Link>
+            <Link href="/privacy" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+              {t.header.privacy}
             </Link>
           </nav>
 

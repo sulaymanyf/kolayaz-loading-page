@@ -9,6 +9,7 @@ interface Translations {
     features: string
     howToUse: string
     pricing: string
+    support: string
     login: string
     getStarted: string
   }
@@ -155,6 +156,7 @@ const translations: Record<Language, Translations> = {
       features: "Features",
       howToUse: "How It Works",
       pricing: "Pricing",
+      support: "Support",
       login: "Sign In",
       getStarted: "Get Started",
     },
@@ -302,6 +304,7 @@ const translations: Record<Language, Translations> = {
       features: "功能特点",
       howToUse: "如何使用",
       pricing: "价格方案",
+      support: "支持",
       login: "登录",
       getStarted: "开始使用",
     },
@@ -447,6 +450,7 @@ const translations: Record<Language, Translations> = {
       features: "Özellikler",
       howToUse: "Nasıl Çalışır",
       pricing: "Fiyatlandırma",
+      support: "Destek",
       login: "Giriş Yap",
       getStarted: "Başla",
     },

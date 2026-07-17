@@ -6,6 +6,7 @@ Use Dokploy's Docker deployment for this static Next.js export.
 
 - Dockerfile path: `Dockerfile`
 - Container port: `80`
+- Node version in Docker: `22`
 
 If you use Docker Compose in Dokploy:
 

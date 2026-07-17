@@ -1,20 +1,26 @@
 # Dokploy Static Deployment
 
-Use Dokploy's static site deployment for this project.
+Use Dokploy's Docker deployment for this static Next.js export.
 
 ## Settings
 
-- Install command: `pnpm install --frozen-lockfile`
-- Build command: `pnpm build`
-- Publish directory: `out`
-- Node version: `20` or newer
+- Dockerfile path: `Dockerfile`
+- Container port: `80`
+
+If you use Docker Compose in Dokploy:
+
+- Compose file: `docker-compose.yml`
+- Service: `kolayaz-landing-page`
+- Container port: `80`
 
 ## Notes
 
-This project is configured with Next.js static export, so `pnpm build` generates a fully static site in the `out` directory.
+This project is configured with Next.js static export. The Docker build runs `pnpm build`, copies the generated `out` directory into Nginx, and serves it from port `80`.
 
-If Dokploy cannot find `pnpm`, enable Corepack in the install/build step or use:
+After deployment, open `/__deploy_check`. It should return:
 
-```sh
-corepack enable && pnpm install --frozen-lockfile
+```txt
+kolayaz-static-nginx
 ```
+
+If it does not, Dokploy is not running the image built from this repository's Dockerfile.

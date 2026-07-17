@@ -18,6 +18,8 @@ HELP.md
 .vscode/
 # Nestjs specific
 /dist
+/out
+/.next
 /node_modules
 /build
 /tmp

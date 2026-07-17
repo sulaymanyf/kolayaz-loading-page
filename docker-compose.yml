@@ -1,0 +1,7 @@
+services:
+  kolayaz-landing-page:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    expose:
+      - "80"
